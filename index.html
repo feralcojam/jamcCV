@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="/img/feral-logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
     <title>Feral CV</title>
 </head>
 <body>
@@ -26,34 +28,209 @@
             </nav>
         </div>
     </header>
-    <div class="welcome-container">
-        <h1>Jesús Mayorga</h1>
-    </div>
-    <div class="body-container">
-        <div class="about-me" id="section1">
-            <h1>Sobre mí</h1>
-            <p>
-                Sección sobre mi
-            </p>
-        </div>
-        <div class="projects" id="section2">
-            <h1>Proyectos</h1>
-            <p>
-                Proyectos donde he trabajado
-            </p>
-        </div>
-        <div class="abilities" id="section3">
-            <h1>Tecnologías</h1>
-            <p>
-                Tecnologías que manejo
-            </p>
-        </div>
-        <div class="soft-skills" id="section4">
-            <h1>Habilidades blandas</h1>
-            <p>
-                Mis soft skills son:
-            </p>
-        </div>
+    <div class="container">
+        <section class="welcome-container hidden">
+            <img class="dev-image" src="/img/feralcojam-body-mc.png" alt="dev-image">
+            <div class="text-container">
+                <h2 class="subtitle">Hola, soy Jesús</h2>
+                <div class="anim-text">
+                    Yo soy <span></span>
+                </div>
+                <p class="imp-text">
+                    Me gusta aprender sobre <span>desarrollo web</span> y todo
+                    lo relacionado con el <span>Front-End</span>.
+                </p>
+                <p class="imp-text">
+                    Actualmente soy estudiante, y te invito a echar un vistazo
+                    a mi sitio web.
+                </p>
+            </div>
+        </section>
+        <section class="about-me hidden" id="section1">
+            <div class="text-container">
+                <img class="rb-bar-aboutme" src="/img/red-blue-bar.png" alt="color red and blue bar">
+                <h2 class="sec-subtitle">Sobre Mí</h2>
+                <p class="redac-text">
+                    Soy un estudiante de nivel superior en <span>Ingeniería
+                    en Sistemas Computacionales</span>, con conocimientos
+                    enfocados en <span>desarrollo web</span>, 
+                    <span>aplicaciones de escritorio</span> y <span>
+                    aplicaciones móviles</span>, desarrollados a través 
+                    de proyectos propios y asignados por mis tutores de la
+                    carrera, contribuyendo con mis habilidades para lograr
+                    resultados que satisfagan los requerimientos de los
+                    clientes.
+                </p>
+            </div>
+            <img class="about-me-img" src="/img/feralcojam-body-mc.png" alt="about me image">
+        </section>
+        <section class="projects hidden" id="section2">
+            <div class="text-container">
+                <img class="rb-bar-projects" src="/img/red-blue-bar.png" alt="color red and blue bar">
+                <h2 class="sec-subtitle">Proyectos</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="/img/salumex.png" alt="proyecto salumex">
+                        <div class="card-content">
+                            <hr class="card-hr">
+                            <h3>Salumex</h3>
+                            <p class="redac-text">
+                                Un sistema que brinda a las instituciones
+                                educativas, gubernamentales, de salud o
+                                sector industrial las herramientas
+                                necesarias para gestionar la información
+                                clínica y un sistema de alertas para
+                                notificar sobre accidentes dentro del
+                                instituto.
+                            </p>
+                            <hr class="card-hr">
+                            <a href="#" class="btn">Saber más</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/cine-logo512x512.png" alt="logo de cine">
+                        <div class="card-content">
+                            <hr class="card-hr">
+                            <h3>Cine web</h3>
+                            <p class="redac-text">
+                                Un sitio web que busca mejorar aspectos
+                                visuales y funcionalidades sobre la página
+                                web "La Casa del Cine Mx". La tecnología 
+                                que se utilizó fue HTML5, CSS3, JS y se
+                                hizo uso de Bootstrap 5.3.0 en colaboración
+                                con compañeros de la carrera.
+                            </p>
+                            <hr class="card-hr">
+                            <a href="#" class="btn">Saber más</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="/img/webscrapping.png" alt="icono de web scrapping">
+                        <div class="card-content">
+                            <hr class="card-hr">
+                            <h3>Web scrapping</h3>
+                            <p class="redac-text">
+                                Una práctica de Programación web que tiene como
+                                función el buscar en diferentes sitios web sobre
+                                ofertas de empleo en puestos de TI, los datos
+                                obtenidos se muestran al usuario en el sitio web
+                                , brindando una herramienta para la 
+                                preparación de entrevistas.
+                            </p>
+                            <hr class="card-hr">
+                            <a href="#" class="btn">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="abilities hidden" id="section3">
+            <div class="text-container">
+                <img class="rb-bar-abilities" src="/img/red-blue-bar.png" alt="color red and blue bar">
+                <h2 class="sec-subtitle">Tecnologías</h2>
+            </div>
+            <div class="abilities-container">
+                <img src="/img/html.png" alt="logo de HTML" class="abilities-img">
+                <img src="/img/css.png" alt="logo de CSS" class="abilities-img">
+                <img src="/img/js.png" alt="logo de JavaScript" class="abilities-img">
+                <img src="/img/java.png" alt="logo de Java" class="abilities-img">
+            </div>
+        </section>
+        <section class="soft-skills hidden" id="section4">
+            <div class="text-container">
+                <img class="rb-bar-soft-skills" src="/img/red-blue-bar.png" alt="color red and blue bar">
+                <h2 class="sec-subtitle">
+                    Habilidades blandas
+                    <span> (soft skills)</span>
+                </h2>
+                <div class="card-container-sk">
+                    <div class="card-sk">
+                        <div class="card-content-sk">
+                            <h3>Autodídacta</h3>
+                            <hr class="card-hr">
+                            <p class="redac-text">
+                                Siempre con la disposición de aprender
+                                cualquier tecnología, práctica, estrategia,
+                                modelo...
+                            </p>
+                            <hr class="card-hr">
+                        </div>
+                    </div>
+                    <div class="card-sk">
+                        <div class="card-content-sk">
+                            <h3 class="sk-sub">Comunicación efectiva</h3>
+                            <hr class="card-hr">
+                            <p class="redac-text">
+                                Expreso con claridad las dudas que tengo 
+                                y doy a entender mi punto de vista con
+                                facilidad.
+                            </p>
+                            <hr class="card-hr">
+                        </div>
+                    </div>
+                    <div class="card-sk">
+                        <div class="card-content-sk">
+                            <h3>Adaptabilidad</h3>
+                            <hr class="card-hr">
+                            <p class="redac-text">
+                                Soy capaz de adaptarme al cambio dependiendo
+                                de la situación, mayormente apoyando al
+                                equipo para avanzar juntos.
+                            </p>
+                            <hr class="card-hr">
+                        </div>
+                    </div>
+                    <div class="card-sk">
+                        <div class="card-content-sk">
+                            <h3>Trabajo en equipo</h3>
+                            <hr class="card-hr">
+                            <p class="redac-text">
+                                Sin problemas para trabajar en equipo y 
+                                comunicarme con ellos para aclarar dudas o
+                                compartir ideas.
+                            </p>
+                            <hr class="card-hr">
+                        </div>
+                    </div>
+                    <div class="card-sk">
+                        <div class="card-content-sk">
+                            <h3>Creatividad</h3>
+                            <hr class="card-hr">
+                            <p class="redac-text">
+                                Nunca estoy conforme con un proyecto,
+                                siempre busco puntos de mejora tanto en
+                                la estructura del proyecto como diseño.
+                            </p>
+                            <hr class="card-hr">
+                        </div>
+                    </div>
+                    <div class="card-sk">
+                        <div class="card-content-sk">
+                            <h3>Ética</h3>
+                            <hr class="card-hr">
+                            <p class="redac-text">
+                                Soy tolerante y respeto las creencias de
+                                cada uno de mis compañeros de trabajo, me
+                                enfoco en el trabajo y no en los prejuicios.
+                            </p>
+                            <hr class="card-hr">
+                        </div>
+                    </div>
+                    <div class="card-sk">
+                        <div class="card-content-sk">
+                            <h3>Lidezrago</h3>
+                            <hr class="card-hr">
+                            <p class="redac-text">
+                                Motivar, organizar y gestionar recursos son
+                                actividades que puedo realizar sin problemas.
+                            </p>
+                            <hr class="card-hr">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
