@@ -4,3 +4,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.navbar {
+    display: flex;
+    background-color: #FAFAFA;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%; 
+}
+
+header .img-logo img {
+    width: auto;
+    height: 70px;
+}
+
+header .img-logo {
+    cursor: pointer;
+}
+
+header .nav-links {
+    list-style: none;
+}
+
+header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav-links li:hover {
+    transition: 0.3s ease;
+    border-radius: 5px;
+    background-color: #e9e5e5;
+}
+
+header .nav-links a {
+    color: #212427;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: "Bebas Neue", sans-serif;
+}
