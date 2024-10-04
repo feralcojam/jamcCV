@@ -40,7 +40,7 @@ header .img-logo img {
 }
 
 header .img-logo {
-    cursor: pointer;
+    cursor: default;
     transition: 0.3s;
 }
 
@@ -415,3 +415,58 @@ header .nav-links a {
     background-color: #42aadf;
     transition: 0.3s ease;
 }
+/* end of soft skills styles*/
+
+/* footer styles */
+.footer-navbar {
+    display: flex;
+    background-color: #FAFAFA;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%; 
+}
+
+footer .img-logo img {
+    width: auto;
+    height: 70px;
+}
+
+footer .img-logo {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer .img-logo:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+footer .nav-links {
+    list-style: none;
+}
+
+footer .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+    transition: 0.3s;
+}
+
+footer .nav-links li span {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+
+footer .nav-links li:hover {
+    transition: 0.3s ease;
+    border-radius: 5px;
+    background-color: #e9e5e5;
+}
+
+footer .nav-links a {
+    color: #212427;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: "Bebas Neue", sans-serif;
+}
+/* end of footer styles */
